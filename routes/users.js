@@ -4,18 +4,15 @@ var producthelpers = require('../producthelper/producthelpers')
 var userhelpers = require('../producthelper/userhelpers');
 const { response } = require('../app');
    //commit
-const accountSid = 'ACeedd2bff7688961ebebae472001146cc';
-const authToken = '8ea581172d86846f21b154b6c5867861';
+const accountSid = 'AC720011cc';
+const authToken = 
 const client = require('twilio')(accountSid, authToken);
 const paypal = require('paypal-rest-sdk');
 
 const nodemailer = require("nodemailer");
 /* GET users listing. */
 paypal.configure({
-  'mode': 'sandbox', //sandbox or live
-  'client_id': 'ARpfgsZ_FTRWFstiWQmQjKbASEOfZPXN9Pw9TTpfM7U9zlHTOEDd4fxLfjUqZ1VB3EbywEh-HJQq2gze',
-  'client_secret': 'EG-v9tubLNZqCwu8DRYwAodIxKcXTurvU48pT-aV4QHs_6JqC87kRLytsn45DAvQ2ReRcC3uN9Otc8-A'
-});
+  'mode': 'sandbox', //sandbox or 
 
 var validitycheckinguser = function (req, res, next) {
   if (req.session.userlogin) {
