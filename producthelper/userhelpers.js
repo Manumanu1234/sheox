@@ -4,13 +4,12 @@ const { response } = require("../app");
 var ObjectId = require("mongodb").ObjectId;
 var bycrpt = require("bcrypt")
    //commit
-const accountSid = 'ACeedd2bff7688961ebebae472001146cc';
-const authToken = '8ea581172d86846f21b154b6c5867861';
+const accountSid = 'ACeedd2b6cc';
 const client = require('twilio')(accountSid, authToken);
 const Razorpay = require("razorpay");
 const { resolve } = require("path");
 const { rejects } = require("assert");
-var instance = new Razorpay({ key_id: 'rzp_test_bQuC3tCBEV6iGn', key_secret: 'WTS4y1ORhsbXGOS4eMzbPFir' })
+var instance = new Razorpay({ key_id: 'rzt_bQiGn', key_secret: 'WTS4r' })
 module.exports = {
     getAllproducts: function () {
         return new Promise(async (resolve, reject) => {
